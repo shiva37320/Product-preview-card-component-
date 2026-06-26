@@ -111,14 +111,6 @@ button {
     font-weight: 700;
 }
 
-button img {
-    display: inline-block;
-}
-
-button p {
-    display: inline-block;
-}
-
 button:hover {
     background-color: hsl(158, 42%, 18%);
     cursor: pointer;
