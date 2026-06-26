@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 25rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+/*Image-Container*/
+
+.image-container {
+    width: 100%;
+}
+
+.desktop-img {
+    display: none;
+}
+
+.mobile-img {
+    display: block;
+    width: 100%;
+}
+
+/*Text-CONTAINER*/
+
+.text-container {
+    width: 100%;
+    text-align: start;
+    padding: 1.5rem;
+}
+
+.first {
+    font-family: "montserrat", sans-serif;
+    font-size: .875rem;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    margin: .75rem 0;
+}
+
+.second {
+    font-family: "fraunces", serif;
+    font-weight: 700;
+    color: hsl(212, 21%, 14%);
+}
+
+.third {
+    font-family: "montserrat", sans-serif;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    margin: .75rem 0;
+    font-size: .875rem;
+
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    margin: 1.25rem 0;
+}
+
+.fourth {
+    font-family: "fraunces", serif;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+    display: inline-block;
+}
+
+.fifth {
+    font-family: "montserrat", sans-serif;
+    color: hsl(228, 12%, 48%);
+    display: inline-block;
+    text-decoration: line-through;
+    font-size: .875rem;
+}
+
+.button {
+    display: flex;
+}
+
+button {
+    width: 100%;
+    background-color: hsl(158, 36%, 37%);
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: 1.25rem 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    font-family: "montserrat", sans-serif;
+    font-size: .875rem;
+    font-weight: 700;
+}
+
+button img {
+    display: inline-block;
+}
+
+button p {
+    display: inline-block;
+}
+
+button:hover {
+    background-color: hsl(158, 42%, 18%);
+    cursor: pointer;
+}
+
+@media(min-width: 750px) {
+    .container {
+        flex-direction: row;
+        max-width: 37.5rem;
+    }
+
+    .image-container {
+        width: 50%;
+    }
+
+    .text-container {
+        width: 50%;
+    }
+
+    .mobile-img {
+        display: none;
+    }
+
+    .desktop-img {
+        display: block;
+        width: 100%;
+    }
+}
